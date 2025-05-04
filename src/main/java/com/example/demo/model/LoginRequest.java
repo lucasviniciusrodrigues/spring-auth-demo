@@ -22,10 +22,10 @@ public class LoginRequest {
 
     private void validate() {
         if (username == null || username.isBlank()) {
-            throw new IllegalArgumentException("Usuário não pode ser vazio");
+            throw new IllegalArgumentException("Usuário invalido");
         }
         if (password == null || password.isBlank()) {
-            throw new IllegalArgumentException("Senha não pode ser vazia");
+            throw new IllegalArgumentException("Senha invalida");
         }
     }
 
